@@ -1,7 +1,9 @@
 import './Welcome.css';
+import App from "../App";
 function Welcome(){
     return (
             <>
+                <App></App>
                 <div className = "welcome-page-background">
                     <hr className="border border-white border-2 opacity-100"/>
                     <img src="../Images/sudoku-background.jpg"/>

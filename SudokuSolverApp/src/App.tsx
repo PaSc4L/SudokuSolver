@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import './App.css'
+import {Link} from "react-router-dom";
 import Welcome from "./Components/Welcome";
 
 function App() {
@@ -17,21 +18,18 @@ function App() {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">Kezdőlap</a>
+                  <Link className="nav-link active" aria-current="page" to="/">Kezdőlap</Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="#">Feliratozás</a>
+                  <Link className="nav-link active" to="/subscribe">Feliratozás</Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="#">Sudoku megoldása</a>
+                  <Link className="nav-link active" to = "/SudokuSolver">Sudoku megoldása</Link>
                 </li>
               </ul>
             </div>
-
           </div>
-
         </nav>
-        <Welcome></Welcome>
       </>
   )
 }
