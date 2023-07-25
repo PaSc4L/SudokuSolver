@@ -1,0 +1,22 @@
+body{
+    background-image: linear-gradient(rgba(55, 61, 32, 0.65), rgba(55, 61, 32, 0.65)),
+    url('../Images/sudoku-background.jpg');
+    background-size:100%, 100%;
+    color: white;
+}
+hr{
+    margin:0;
+}
+h1{
+    text-align: center;
+    padding-top: 10px;
+}
+.welcome-paragraphs{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-left: 17%;
+    margin-right: 17%;
+    margin-bottom: 20px;
+}

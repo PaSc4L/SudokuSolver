@@ -1,0 +1,8 @@
+nav{
+    background-color: #717744;
+
+}
+.navbar-brand, .navbar-nav .show > .nav-link, .navbar-nav .nav-link.active {
+    color: white;
+    text-align: center;
+}
