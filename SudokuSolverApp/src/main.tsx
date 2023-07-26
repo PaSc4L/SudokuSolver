@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import SudokuSolver from "./Components/SudokuSolver";
 import Welcome from "./Components/Welcome";
+import EmailForm from "./Components/EmailForm";
 
 const router = createBrowserRouter([
     {
@@ -15,8 +16,12 @@ const router = createBrowserRouter([
         element: <Welcome></Welcome>,
     },
     {
-        path: "sudokuSolver",
+        path: "/SudokuSolver",
         element: <SudokuSolver></SudokuSolver>,
+    },
+    {
+        path: "/EmailForm",
+        element: <EmailForm></EmailForm>,
     }
 ]);
 
