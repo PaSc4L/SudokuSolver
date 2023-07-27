@@ -6,7 +6,13 @@ function Email(){
     const[email,setEmail] = useState('');
     const handleSubscribeClick = (event:any) =>{
         if (email.trim().length !== 0) {
-            alert(email + " email címmel sikeresen feliratkozott!");
+            /*fetch("http://localhost:8080/user/subscribe", {
+                method:"POST",
+                headers:{"Content-type": "application/json"},
+                body:JSON.stringify(email)
+            }).then(()=>*/
+                alert(email + " email címmel sikeresen feliratkozott!")
+            //)
         }else{
             alert("Sikertelen feliratkozás! Töltse ki a mezőt!");
         }
