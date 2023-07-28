@@ -35,7 +35,7 @@ function App() {
         </nav>
         <div className = "welcome-page-background">
           <div>
-            <hr className="border border-white border-2 opacity-100"/>
+            <hr className="border border-white border-3 opacity-100"/>
 
           </div>
         </div>

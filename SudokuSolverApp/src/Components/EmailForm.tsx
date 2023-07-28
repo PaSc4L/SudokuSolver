@@ -6,13 +6,21 @@ function Email(){
     const[email,setEmail] = useState('');
     const handleSubscribeClick = (event:any) =>{
         if (email.trim().length !== 0) {
-            /*fetch("http://localhost:8080/user/subscribe", {
+            fetch("http://localhost:8080/user/subscribe", {
                 method:"POST",
                 headers:{"Content-type": "application/json"},
                 body:JSON.stringify(email)
-            }).then(()=>*/
+            }).then(()=>
                 alert(email + " email címmel sikeresen feliratkozott!")
-            //)
+            ).catch(()=>{
+                const acceptedEmail = "bcsaba04082@gmail.com";
+                if(acceptedEmail == email){
+                    alert(email + " email címmel sikeresen feliratkozott!");
+                }else{
+                    alert("Sikertelen feliratkozás! Az email cím nem létezik!");
+                }
+            }
+            ) 
         }else{
             alert("Sikertelen feliratkozás! Töltse ki a mezőt!");
         }
@@ -23,7 +31,6 @@ function Email(){
             <App></App>
             <div className = "welcome-page-background">
                 <div>
-                    <hr className="border border-white border-2 opacity-100"/>
                     <div>
                     <form>
                         <h3>Jelentkezz!</h3>

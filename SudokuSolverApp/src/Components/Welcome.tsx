@@ -9,7 +9,6 @@ function Welcome(){
                 <App></App>
                 <div className = "welcome-page-background">
                     <div>
-                        <hr className="border border-white border-2 opacity-100"/>
                         <h1>Old meg a sudoku-t Sudoku Solverrel!</h1>
                         <div className="welcome-paragraphs">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat ligula mauris, ut scelerisque massa aliquet sit amet. Vivamus ligula nisl, bibendum vel tincidunt vitae, posuere id turpis. Vestibulum non est eu erat tincidunt condimentum nec ut orci. Vivamus maximus nisi sed laoreet dictum. Quisque sollicitudin urna neque. Suspendisse at luctus tortor, ac elementum quam. Fusce gravida nulla sed magna maximus, vitae tincidunt diam pretium. Vestibulum pretium ante augue, a commodo orci tempus sed. Phasellus aliquam tellus ac orci semper tempor. Curabitur nibh enim, pellentesque nec tellus sit amet, viverra egestas enim.</p>

@@ -5,7 +5,7 @@ form{
     background-color: rgba(188, 189, 139, 0.9);
     color: #766153;
     margin: 15% 20%;
-    border-radius: 5px;
+    border-radius: 10px;
     padding:80px;
 }
 h3{
@@ -19,4 +19,8 @@ input, label, button{
 }
 input{
     width:70%;
+    border-radius: 10px;
+}
+button{
+    vertical-align: center;
 }
