@@ -123,7 +123,6 @@ function SudokuSolver(){
                 if (solveSudoku(board, n)){
 
                     setBoard(board);
-                    // print(board, n);
                     return true;    
                 }
             }
@@ -156,7 +155,6 @@ function SudokuSolver(){
                 if(!element){
                     element = '0';
                 }
-                console.log(element);
                 if((!isSafe(temp,i,j,Number(element)) && Number(element)>0)){
                     cantSolve=true;
                 }
@@ -174,7 +172,6 @@ function SudokuSolver(){
                         let htmlElement = (document.getElementById(id) as HTMLInputElement);
                         if(localStorage.getItem(id)){
                             //localStorage.setItem(id,board[i][j].toString());
-                            console.log(htmlElement)
                             htmlElement.style.fontWeight = 'bold';
                             htmlElement.style.backgroundColor = 'green';
                         }
