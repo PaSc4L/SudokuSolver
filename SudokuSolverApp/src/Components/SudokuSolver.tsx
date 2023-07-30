@@ -8,7 +8,6 @@ function SudokuSolver(){
 
     const loadingSudoku = () =>{
 
-        console.log(board);
         for(let i =0; i<9; i++){
             for(let j = 0; j<9; j++)
             {
@@ -16,7 +15,6 @@ function SudokuSolver(){
                 board[i][j]= Number(localStorage.getItem(id));
             }
         }
-        //localStorage.setItem("matrix", JSON.stringify(board));
     }
     useEffect(()=>{
     loadingSudoku()

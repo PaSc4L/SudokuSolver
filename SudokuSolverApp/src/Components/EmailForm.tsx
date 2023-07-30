@@ -4,6 +4,7 @@ import App from "../App";
 function Email(){
 
     const[email,setEmail] = useState('');
+    //subscribe
     const handleSubscribeClick = (event:any) =>{
         if (email.trim().length !== 0) {
             fetch("http://localhost:8080/user/subscribe", {
@@ -13,7 +14,7 @@ function Email(){
             }).then(()=>
                 alert(email + " email címmel sikeresen feliratkozott!")
             ).catch(()=>{
-                const acceptedEmail = "bcsaba04082@gmail.com";
+                const acceptedEmail = "proba123@gmail.com";
                 if(acceptedEmail == email){
                     alert(email + " email címmel sikeresen feliratkozott!");
                 }else{
@@ -34,7 +35,7 @@ function Email(){
                     <div>
                     <form>
                         <h3>Jelentkezz!</h3>
-                        <p>Szeretne feliratkozni? Itt megeheti!</p>
+                        <p>Szeretne feliratkozni? Itt megteheti!</p>
                         <label>Email:</label> <br/>
                         <input placeholder="Írd ide az email címed..."
                                value={email}
