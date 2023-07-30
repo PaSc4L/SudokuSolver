@@ -24,7 +24,7 @@ function App() {
                   <Link className="nav-link active" aria-current="page" to="/">Kezdőlap</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link active" to="/EmailForm">Feliratozás</Link>
+                  <Link className="nav-link active" to="/EmailForm">Feliratkozás</Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link active" to = "/SudokuSolver">Sudoku megoldása</Link>

@@ -41,12 +41,14 @@ function Email(){
                                onChange={(event) =>setEmail(event.target.value)}
                         />
                         <button onClick = {handleSubscribeClick} className="btn btn-success btn-out btn-out">Feliratkozom!</button>
-                        <input type="radio" id="javascript" name="fav_language" value="Könnyű"/>
-                        <label>JavaScript</label>
-                        <input type="radio" id="javascript" name="fav_language" value="Közepes"/>
-                        <label>JavaScript</label>
-                        <input type="radio" id="javascript" name="fav_language" value="Nehéz"/>
-                        <label>JavaScript</label>
+                        <div>
+                            <input type="radio" className='difficulty' name="fav_language" value="Könnyű"/>
+                            <label>Könnyű</label>
+                            <input type="radio" className='difficulty' name="fav_language" value="Közepes"/>
+                            <label>Közepes</label>
+                            <input type="radio" className='difficulty' name="fav_language" value="Nehéz"/>
+                            <label>Nehéz</label>
+                        </div>
                     </form>
                     </div>
                 </div>

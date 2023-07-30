@@ -38,6 +38,10 @@ input {
 input:hover {
 	background: #ffffff;
 }
+.buttons{
+	text-align: center;
+	padding:30px;
+}
 .btn{
     color: white;
     align-items: center;

@@ -151,7 +151,7 @@ function SudokuSolver(){
         [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
         [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
         [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ] ];
-        
+
         for (let i =0; i<9; i++){
             for (let j =0; j<9; j++){
                 let element = (document.getElementById(i.toString() + j.toString()) as HTMLInputElement).value;
@@ -186,7 +186,7 @@ function SudokuSolver(){
             }
         }
         else{
-            alert("No solution");
+            alert("Hiba: a sudoku nem megoldható!");
         }
     }
 
@@ -219,9 +219,10 @@ function SudokuSolver(){
                         ))}
                             
                     </div>
-                    <button className="btn btn-primary" onClick={solver}>Megoldás</button>
-                    
-                    <button className="btn btn-danger" onClick={handleClear}>Tisztítás</button>
+                    <div className="buttons">
+                        <button className="btn btn-primary" onClick={solver}>Megoldás</button>
+                        <button className="btn btn-danger" onClick={handleClear}>Reset</button>
+                    </div>
                 </div>
             </div>
         </>

@@ -16,11 +16,21 @@ p, label{
 }
 input, label, button{
     margin:5px;
+    height:36px;
+}
+button{
+    vertical-align: center;
 }
 input{
     width:70%;
     border-radius: 10px;
 }
-button{
-    vertical-align: center;
+.difficulty{
+    width:25%;
+    height:30px;
+}
+div label{
+    height:30px;
+    width:80px;
+    margin: auto;
 }
