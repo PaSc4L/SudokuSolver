@@ -4,7 +4,7 @@
     background-color: #ffffff;
     width:fit-content;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 2px;
 }
@@ -35,7 +35,6 @@ input {
 	width: 40px;
 	text-align: center;
 }
-
 input:hover {
 	background: #ffffff;
 }

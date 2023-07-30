@@ -38,9 +38,15 @@ function Email(){
                         <label>Email:</label> <br/>
                         <input placeholder="Írd ide az email címed..."
                                value={email}
-                                onChange={(event) =>setEmail(event.target.value)}
+                               onChange={(event) =>setEmail(event.target.value)}
                         />
                         <button onClick = {handleSubscribeClick} className="btn btn-success btn-out btn-out">Feliratkozom!</button>
+                        <input type="radio" id="javascript" name="fav_language" value="Könnyű"/>
+                        <label>JavaScript</label>
+                        <input type="radio" id="javascript" name="fav_language" value="Közepes"/>
+                        <label>JavaScript</label>
+                        <input type="radio" id="javascript" name="fav_language" value="Nehéz"/>
+                        <label>JavaScript</label>
                     </form>
                     </div>
                 </div>
